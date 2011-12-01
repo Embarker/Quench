@@ -1,0 +1,51 @@
+#
+# Quench
+# By: Jakeob22
+# Version 1.0
+#
+
+# READ ME #
+How to use the configuration:
+"Empty Bucket?" - 
+Set to true if you want players to get an empty bucket back
+after they drink. Set to false if you want the bucket to remain
+full, even after they drink it.
+
+"Helps Hunger?" -
+These can only be set to "true" or "false"
+Set to true if you would like players to be able to gain or lose 
+hunger for that liquid. For example, if water was set to true, 
+they can alter their hunger level by drinking it. 
+If it's set to false, they can't.
+
+"Helps Health?" -
+These can only be set to "true" or "false"
+Set to true if you would like players to be able to gain or lose 
+health for that liquid. For example, if water was set to true, 
+they can alter their heart amount by drinking it. 
+If it's set to false, they can't.
+
+
+"How much hunger?" -
+These can only be numbers.
+This talks about how much a food will add to your hunger bar. 
+Each half of a piece in the bar is worth 1. For example, if water 
+was set to "2", it could heal 1 piece of food on the hunger bar. 
+If it was set to "3", it would heal 1 and a half pieces. You can
+make negative numbers, also. They will force peoples hunger bars
+to go down! These will only take effect if the liquid it is asking
+about is set to true.
+
+"How much health?" -
+These can only be numbers.
+This talks about how many hearts will add to your health bar. 
+Each half of a piece in the bar is worth 1. For example, if water 
+was set to "2", it could heal 1 heart in the health bar. 
+If it was set to "3", it would heal 1 and a half hearts. You can
+make negative numbers, also. They will force people to become injured
+when they drink! These will only take effect if the liquid it is asking
+about is set to true.
+
+Please try to fix your problem before asking me about it.
+If you have problems, just private message me or post about 
+it. ALL SUGGESTIONS WELCOME!

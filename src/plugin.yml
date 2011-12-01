@@ -1,0 +1,12 @@
+name: Quench
+main: me.jakeob.Quench.Quench
+version: 1.0
+commands:
+   reloadquench:
+      description: This command reloads the Quench configuration.
+      permission: quench.reload
+      usage: /<command>
+permissions:
+    quench.reload:
+        description: Allows a player use /reloadquench
+        default: op

@@ -1,0 +1,24 @@
+#
+# Quench
+# By: Jakeob22
+# Version 1.0
+#
+
+Config:
+  Empty the bucket?: true
+  Helps Hunger?:
+    Water: true
+    Milk: true
+    Lava: false
+  Helps Health?:
+    Water: false
+    Milk: false
+    Lava: true
+  How much hunger?:
+    Water: 2
+    Milk: 10
+    Lava: 5
+  How much health?:
+    Water: 2
+    Milk: 2
+    Lava: -5
