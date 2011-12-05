@@ -1,5 +1,6 @@
 package me.jakeob.Quench;
 
+import org.bukkit.Effect;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerListener;
@@ -36,6 +37,7 @@ public class QuenchPlayerListener extends PlayerListener{
 				}
 				//If the new level is above the max(20) or below the min(0), it will set it to the highest or lowest possible. (Just to be safe)
 				event.getPlayer().setFoodLevel(this.iNewFood); //Changes your food level to your old food plus the value set for the drink.
+				event.getPlayer().getWorld().playEffect(event.getPlayer().getLocation(), Effect.POTION_BREAK, 1);
 			}
 			
 			//I used the same system for health
@@ -49,6 +51,7 @@ public class QuenchPlayerListener extends PlayerListener{
 					this.iNewHealth = 0;
 				}
 				event.getPlayer().setHealth(this.iNewHealth);
+				event.getPlayer().getWorld().playEffect(event.getPlayer().getLocation(), Effect.POTION_BREAK, 1);
 			}
 			//If they set "Empty the bucket?" to true, it will change the drink they used into an empty bucket.
 		    if (plugin.bEmptyBucket == true){
@@ -70,6 +73,7 @@ public class QuenchPlayerListener extends PlayerListener{
 					this.iNewFood = 0;
 				}
 				event.getPlayer().setFoodLevel(this.iNewFood);
+				event.getPlayer().getWorld().playEffect(event.getPlayer().getLocation(), Effect.POTION_BREAK, 1);
 			}
 			if (plugin.bHealthMilk == true){
 			    this.iCurrentHealth = event.getPlayer().getHealth();
@@ -81,6 +85,7 @@ public class QuenchPlayerListener extends PlayerListener{
 					this.iNewHealth = 0;
 				}
 				event.getPlayer().setHealth(this.iNewHealth);
+				event.getPlayer().getWorld().playEffect(event.getPlayer().getLocation(), Effect.POTION_BREAK, 1);
 			}
 		    if (plugin.bEmptyBucket == true){
 		    	if (plugin.bHungerMilk == true || plugin.bHealthMilk == true){
@@ -100,6 +105,7 @@ public class QuenchPlayerListener extends PlayerListener{
 					this.iNewFood = 0;
 				}
 				event.getPlayer().setFoodLevel(this.iNewFood);
+				event.getPlayer().getWorld().playEffect(event.getPlayer().getLocation(), Effect.POTION_BREAK, 1);
 			}
 			if (plugin.bHealthLava == true){
 			    this.iCurrentHealth = event.getPlayer().getHealth();
@@ -111,6 +117,7 @@ public class QuenchPlayerListener extends PlayerListener{
 					this.iNewHealth = 0;
 				}
 				event.getPlayer().setHealth(this.iNewHealth);
+				event.getPlayer().getWorld().playEffect(event.getPlayer().getLocation(), Effect.POTION_BREAK, 1);
 			}
 		    if (plugin.bEmptyBucket == true){
 		    	if (plugin.bHungerLava == true || plugin.bHealthLava == true){
